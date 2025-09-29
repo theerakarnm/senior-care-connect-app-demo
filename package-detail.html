@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Healthcare Package Details</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#38e07b",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101c22",
+          },
+          fontFamily: {
+            display: ["Lexend"],
+          },
+          borderRadius: {
+            DEFAULT: "0.5rem",
+            lg: "1rem",
+            xl: "1.5rem",
+            full: "9999px",
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    .progress-bar {
+      background-color: #e0e0e0;
+      border-radius: 9999px;
+      height: 8px;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .progress {
+      background-color: #13a4ec;
+      height: 100%;
+      border-radius: 9999px;
+    }
+  </style>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200">
+  <div class="flex h-auto min-h-screen w-full flex-col justify-between">
+    <div class="flex-grow">
+      <header class="flex items-center p-4">
+        <a href="/dashboard.html">
+          <button class="flex size-10 items-center justify-center rounded-full bg-white dark:bg-slate-800">
+            <svg class="text-slate-600 dark:text-slate-300" fill="none" height="24" stroke="currentColor"
+              stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 18l-6-6 6-6"></path>
+            </svg>
+          </button>
+        </a>
+        <h1 class="flex-1 text-center text-xl font-bold pr-10">
+          My Package
+        </h1>
+      </header>
+      <main class="p-4">
+        <section class="mb-6">
+          <h2 class="text-2xl font-bold mb-4">Current Package</h2>
+          <div
+            class="relative rounded-xl overflow-hidden text-white bg-cover bg-center h-48 flex flex-col justify-end p-4"
+            style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCO4o7II5o1DTG5KtUpFlximFcY3DTzkEfIdY-sI7HmXDav1CqvJhC6pBvXB3tpazZQnpvRIDcqExi8wuBjoFHtFdgib5PLmaTOVPIFrmvy6-5OCwngfXVu8bE03qqVPBmfa0zqmlL1o8SEW8yJDE2GRJ2wDdNZkRCfO6kr_rU9gm9Hs9DxIEaeoSQUfey2EJoswJc7K7Zg6bAg1EUpHKD9Lxf1HWGSH4hQwRDG87-cpTI6nrbCbM1pII1LNvr8mOynN9qca39pDbRr");'>
+            <div>
+              <h3 class="text-3xl font-bold">Premium Care</h3>
+              <p class="text-lg">Valid until Dec 31, 2024</p>
+            </div>
+            <span
+              class="absolute top-4 right-4 bg-green-500 text-white text-sm font-semibold px-3 py-1 rounded-full">Active</span>
+          </div>
+        </section>
+        <section class="mb-6">
+          <h2 class="text-2xl font-bold mb-4">Included Services</h2>
+          <div class="space-y-4">
+            <div class="bg-white dark:bg-slate-800 p-4 rounded-lg flex items-center">
+              <div class="mr-4">
+                <div class="bg-primary/20 text-primary flex size-12 items-center justify-center rounded-full">
+                  <svg fill="none" height="28" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 12h18M3 6h18M3 18h18"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="flex-grow">
+                <p class="text-lg font-semibold">Doctor Visits</p>
+                <p class="text-slate-500 dark:text-slate-400 text-base mb-2">
+                  10 of 12 used
+                </p>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 83.33%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white dark:bg-slate-800 p-4 rounded-lg flex items-center">
+              <div class="mr-4">
+                <div class="bg-primary/20 text-primary flex size-12 items-center justify-center rounded-full">
+                  <svg fill="none" height="28" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 12h18M3 6h18M3 18h18"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="flex-grow">
+                <p class="text-lg font-semibold">Physical Therapy</p>
+                <p class="text-slate-500 dark:text-slate-400 text-base mb-2">
+                  5 of 8 used
+                </p>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 62.5%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mb-6">
+          <h2 class="text-2xl font-bold mb-4">Additional Benefits</h2>
+          <div class="space-y-3">
+            <div class="bg-white dark:bg-slate-800 p-4 rounded-lg flex items-center">
+              <div class="bg-primary/20 text-primary flex size-10 items-center justify-center rounded-full mr-4">
+                <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+              </div>
+              <p class="text-lg">24/7 Nurse Helpline</p>
+            </div>
+            <div class="bg-white dark:bg-slate-800 p-4 rounded-lg flex items-center">
+              <div class="bg-primary/20 text-primary flex size-10 items-center justify-center rounded-full mr-4">
+                <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
+                  </path>
+                  <line x1="12" x2="12" y1="9" y2="13"></line>
+                  <line x1="12" x2="12.01" y1="17" y2="17"></line>
+                </svg>
+              </div>
+              <p class="text-lg">Emergency Assistance</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2 class="text-2xl font-bold mb-4">Terms &amp; Renewal</h2>
+          <p class="text-lg leading-relaxed">
+            Your package will automatically renew on Dec 31, 2024. You can
+            cancel or modify your package at any time.
+          </p>
+        </section>
+      </main>
+    </div>
+    <footer
+      class="fixed bottom-0 left-0 right-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-gray-200 dark:border-gray-800 z-20">
+      <nav class="flex justify-around p-2">
+        <a class="flex flex-col items-center justify-center gap-1 w-1/4 p-2 rounded-lg text-primary"
+          href="/dashboard.html">
+          <span class="material-symbols-outlined text-3xl">home</span>
+          <span class="text-xs font-medium">Home</span>
+        </a>
+        <a class="flex flex-col items-center justify-center gap-1 w-1/4 p-2 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-primary/20 hover:text-primary transition-colors"
+          href="/booking/service-select.html">
+          <span class="material-symbols-outlined text-3xl">calendar_month</span>
+          <span class="text-xs font-medium">Bookings</span>
+        </a>
+        <a class="flex flex-col items-center justify-center gap-1 w-1/4 p-2 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-primary/20 hover:text-primary transition-colors"
+          href="/profile.html">
+          <span class="material-symbols-outlined text-3xl">person</span>
+          <span class="text-xs font-medium">Profile</span>
+        </a>
+        <a class="flex flex-col items-center justify-center gap-1 w-1/4 p-2 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-primary/20 hover:text-primary transition-colors"
+          href="#">
+          <span class="material-symbols-outlined text-3xl">menu</span>
+          <span class="text-xs font-medium">More</span>
+        </a>
+      </nav>
+    </footer>
+  </div>
+
+
+</body>
+
+</html>

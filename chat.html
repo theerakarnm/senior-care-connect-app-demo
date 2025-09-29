@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+  <link as="style"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    onload="this.rel='stylesheet'" rel="stylesheet" />
+  <title>Stitch Design</title>
+  <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#38e07b",
+            "background-light": "#f6f8f7",
+            "background-dark": "#122017",
+          },
+          fontFamily: {
+            "display": ["Lexend"]
+          },
+          borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" },
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display">
+  <div class="relative flex h-auto min-h-screen w-full flex-col justify-between group/design-root overflow-x-hidden">
+    <div class="flex flex-col">
+      <header class="flex items-center justify-between p-4 bg-background-light dark:bg-background-dark">
+        <a href="/dashboard.html">
+          <button class="flex items-center justify-center w-10 h-10 text-background-dark dark:text-background-light">
+            <span class="material-symbols-outlined text-3xl">arrow_back</span>
+          </button>
+        </a>
+        <h1 class="text-xl font-bold text-background-dark dark:text-background-light">Messages</h1>
+        <div class="w-10 h-10"></div>
+      </header>
+      <div class="flex flex-col px-4 space-y-2">
+        <div
+          class="flex items-center gap-4 p-3 rounded-lg bg-white dark:bg-background-dark/50 hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors">
+          <img class="object-cover w-16 h-16 rounded-full"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0IxrpfcPkmC7pJFn3A4TNzm7RrUikE3AjkIErmIhMo-pnPzrWKOvB50it9FDXGGQUM1l2Hrf8vyrrbT3u-li3w_jC9r0SDn5iqD2H1Y38egueJ7btfymauseKM5A9Mcrhbbb2L32CxdrjZExDcRFYfdPlMav-vg6qo6_Xo5wvZlh04yAweWqmpzF25m9uoYm0nB-YPGvWYQ5U46hUoQg-cCqswLb5QqRI0KUzEfhi_Vw2TeCufEjaYF94zfaKSSM9bIzXJ10OpovJ" />
+          <div class="flex-1">
+            <div class="flex items-baseline justify-between">
+              <p class="text-lg font-bold text-background-dark dark:text-background-light">Dr. Emily Carter</p>
+              <p class="text-sm font-medium text-black/50 dark:text-white/50">10:30 AM</p>
+            </div>
+            <p class="text-base text-black/70 dark:text-white/70">You have a new message</p>
+          </div>
+        </div>
+        <div
+          class="flex items-center gap-4 p-3 rounded-lg bg-white dark:bg-background-dark/50 hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors">
+          <img class="object-cover w-16 h-16 rounded-full"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmJ7GYglHJTCgvOeeGgbI9XdYIYTSpSoZEt7wxVqsZ-2nBpdWvuj-8h_0GitLSU__0-Jwck7rFcmSnj6fDwCvZCFzElJdcUJssjR8XSVHoDL3S-D-abNEWxbx0P6py1OkACHRuvmV3QrPNY6ydgPtaneaY4V0liwo8Xtaq88nSAPmZ3lXynTzgcHUXc4MGTknhw1soAdpdfZEH-kied7iGk8XOi6ngYc7sl9D0sixk7oMLxV0K2f0Gmi_iq8xGRyEpzIV3RQTCDixM" />
+          <div class="flex-1">
+            <div class="flex items-baseline justify-between">
+              <p class="text-lg font-bold text-background-dark dark:text-background-light">Nurse David Lee</p>
+              <p class="text-sm font-medium text-black/50 dark:text-white/50">Yesterday</p>
+            </div>
+            <p class="text-base text-black/70 dark:text-white/70">Okay, sounds good.</p>
+          </div>
+        </div>
+        <div
+          class="flex items-center gap-4 p-3 rounded-lg bg-white dark:bg-background-dark/50 hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors">
+          <img class="object-cover w-16 h-16 rounded-full"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3l4gkLOj0Owp3KgvTFtMqu1aKycJlRHWLGZ5ZWmV8y_mh7q0NvThGXKVSCXhDNVuxJjGwWNCUsUa4zM_tckP73_td7iA33osW_N3-G0DdHdYwJueTxY4C9_QIv6gjw5UwFmr8_tEbuSwuG3IbiA8vPcR2s6d1KFXmr3MW3Mr9uvjpco-tWthRs3I3dNUXpbEo41uDV5xzPhP28Lvo_7nGD5iZsWcKvrT4S7CRBxmz3oDBYorIRJ9Oe5x1du0JTB0aR2W-w6cwMDZW" />
+          <div class="flex-1">
+            <div class="flex items-baseline justify-between">
+              <p class="text-lg font-bold text-background-dark dark:text-background-light">Therapist Sarah Chen</p>
+              <p class="text-sm font-medium text-black/50 dark:text-white/50">2 days ago</p>
+            </div>
+            <p class="text-base text-black/70 dark:text-white/70">Your appointment is confirmed.</p>
+          </div>
+        </div>
+        <div
+          class="flex items-center gap-4 p-3 rounded-lg bg-white dark:bg-background-dark/50 hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors">
+          <img class="object-cover w-16 h-16 rounded-full"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXbVHY_UUX7OE8540MLzhWb8axTedRG93m--YsVptB50aZKbUDQAwQDEwrRF2BHpPT2IvGlQQpQ3V7xUihLPeyNYSyJjI2vVRbrvxUSD-XT5SLSJvilgv-1NE_gszJ9D2Le4PuBt3ZfKmtAPezXobKaWxZ470mTH1CgUlYnl-oZDZHOpm-voV1pMITKlwJImGX7xFCQKCBA35buthkXw0boJlO5z67sZMX2FQG9OzNkowPNm1txEVqjNJV7Pyaq-ohXelFhW-Yvbfd" />
+          <div class="flex-1">
+            <div class="flex items-baseline justify-between">
+              <p class="text-lg font-bold text-background-dark dark:text-background-light">Dr. Michael Brown</p>
+              <p class="text-sm font-medium text-black/50 dark:text-white/50">3 days ago</p>
+            </div>
+            <p class="text-base text-black/70 dark:text-white/70">Please check your test results.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sticky bottom-0">
+      <div
+        class="flex justify-around bg-background-light dark:bg-background-dark/80 border-t border-black/10 dark:border-white/10 py-2 backdrop-blur-md">
+        <a class="flex flex-col items-center justify-end gap-1 text-primary" href="#">
+          <span class="material-symbols-outlined text-3xl">home</span>
+          <p class="text-xs font-bold leading-normal">Home</p>
+        </a>
+        <a class="flex flex-col items-center justify-end gap-1 text-black/50 dark:text-white/50" href="#">
+          <span class="material-symbols-outlined text-3xl">book_online</span>
+          <p class="text-xs font-medium leading-normal">Bookings</p>
+        </a>
+        <a class="flex flex-col items-center justify-end gap-1 text-black/50 dark:text-white/50" href="#">
+          <span class="material-symbols-outlined text-3xl">person</span>
+          <p class="text-xs font-medium leading-normal">Profile</p>
+        </a>
+        <a class="flex flex-col items-center justify-end gap-1 text-black/50 dark:text-white/50" href="#">
+          <span class="material-symbols-outlined text-3xl">more_horiz</span>
+          <p class="text-xs font-medium leading-normal">More</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

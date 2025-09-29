@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Stitch Design</title>
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+  <link as="style"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend%3Awght%40400%3B500%3B700%3B900"
+    onload="this.rel='stylesheet'" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#38e07b",
+            "background-light": "#f6f8f7",
+            "background-dark": "#122017",
+          },
+          fontFamily: {
+            "display": ["Lexend"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-black dark:text-white">
+  <div class="relative flex min-h-screen w-full flex-col justify-between overflow-x-hidden">
+    <div class="flex-grow">
+      <header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+        <div class="flex items-center p-4">
+          <a href="/dashboard.html">
+            <button class="text-black dark:text-white">
+              <span class="material-symbols-outlined text-3xl">arrow_back</span>
+            </button>
+          </a>
+          <h1 class="flex-1 text-center text-xl font-bold text-black dark:text-white">Notifications</h1>
+          <button class="text-black dark:text-white">
+            <span class="material-symbols-outlined text-3xl">delete_sweep</span>
+          </button>
+        </div>
+      </header>
+      <main class="p-4">
+        <div class="space-y-6">
+          <section>
+            <h2 class="text-lg font-bold text-black/70 dark:text-white/70 mb-4">Today</h2>
+            <div class="space-y-4">
+              <div class="flex items-start gap-4 rounded-xl bg-white dark:bg-black/20 p-4">
+                <div class="mt-1">
+                  <span class="material-symbols-outlined text-primary text-3xl">event_available</span>
+                </div>
+                <div class="flex-1">
+                  <p class="text-lg font-bold">Appointment Reminder</p>
+                  <p class="text-base text-black/80 dark:text-white/80 mb-2">Your therapy session with Dr. Smith is
+                    today at 2:00 PM.</p>
+                  <p class="text-sm text-black/60 dark:text-white/60">10:30 AM</p>
+                </div>
+                <div class="w-3 h-3 rounded-full bg-primary mt-2"></div>
+              </div>
+              <div class="flex items-start gap-4 rounded-xl bg-white dark:bg-black/20 p-4">
+                <div class="mt-1">
+                  <span class="material-symbols-outlined text-primary text-3xl">medication</span>
+                </div>
+                <div class="flex-1">
+                  <p class="text-lg font-bold">Medication Alert</p>
+                  <p class="text-base text-black/80 dark:text-white/80 mb-2">Time to take your morning medication.</p>
+                  <p class="text-sm text-black/60 dark:text-white/60">8:00 AM</p>
+                </div>
+                <div class="w-3 h-3 rounded-full bg-primary mt-2"></div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2 class="text-lg font-bold text-black/70 dark:text-white/70 mb-4">Yesterday</h2>
+            <div class="space-y-4">
+              <div class="flex items-start gap-4 rounded-xl bg-white/70 dark:bg-black/10 p-4">
+                <div class="mt-1">
+                  <span class="material-symbols-outlined text-black/60 dark:text-white/60 text-3xl">chat</span>
+                </div>
+                <div class="flex-1">
+                  <p class="text-lg font-bold">New Message</p>
+                  <p class="text-base text-black/80 dark:text-white/80 mb-2">You have a new message from your nurse,
+                    Sarah.</p>
+                  <p class="text-sm text-black/60 dark:text-white/60">6:15 PM</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4 rounded-xl bg-white/70 dark:bg-black/10 p-4">
+                <div class="mt-1">
+                  <span
+                    class="material-symbols-outlined text-black/60 dark:text-white/60 text-3xl">event_upcoming</span>
+                </div>
+                <div class="flex-1">
+                  <p class="text-lg font-bold">Appointment Confirmed</p>
+                  <p class="text-base text-black/80 dark:text-white/80 mb-2">Your nursing appointment for tomorrow has
+                    been confirmed.</p>
+                  <p class="text-sm text-black/60 dark:text-white/60">2:45 PM</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2 class="text-lg font-bold text-black/70 dark:text-white/70 mb-4">This Week</h2>
+            <div class="space-y-4">
+              <div class="flex items-start gap-4 rounded-xl bg-white/70 dark:bg-black/10 p-4">
+                <div class="mt-1">
+                  <span class="material-symbols-outlined text-black/60 dark:text-white/60 text-3xl">article</span>
+                </div>
+                <div class="flex-1">
+                  <p class="text-lg font-bold">New Health Resource</p>
+                  <p class="text-base text-black/80 dark:text-white/80 mb-2">Check out the new article on "Staying
+                    Active in Your Golden Years".</p>
+                  <p class="text-sm text-black/60 dark:text-white/60">Mon, 9:00 AM</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <footer
+      class="sticky bottom-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-black/10 dark:border-white/10 pb-3">
+      <nav class="flex justify-around items-center pt-2">
+        <a class="flex flex-col items-center gap-1 text-black/60 dark:text-white/60" href="#">
+          <span class="material-symbols-outlined">home</span>
+          <span class="text-xs font-medium">Home</span>
+        </a>
+        <a class="flex flex-col items-center gap-1 text-black/60 dark:text-white/60" href="#">
+          <span class="material-symbols-outlined">calendar_month</span>
+          <span class="text-xs font-medium">Bookings</span>
+        </a>
+        <a class="flex flex-col items-center gap-1 text-primary" href="#">
+          <div class="relative">
+            <div class="bg-primary/20 dark:bg-primary/30 rounded-full p-2">
+              <span class="material-symbols-outlined text-primary">notifications</span>
+            </div>
+            <span
+              class="absolute top-0 right-0 block h-3 w-3 rounded-full bg-red-500 border-2 border-background-light dark:border-background-dark"></span>
+          </div>
+          <span class="text-xs font-bold">Alerts</span>
+        </a>
+        <a class="flex flex-col items-center gap-1 text-black/60 dark:text-white/60" href="#">
+          <span class="material-symbols-outlined">person</span>
+          <span class="text-xs font-medium">Profile</span>
+        </a>
+      </nav>
+    </footer>
+  </div>
+
+</body>
+
+</html>

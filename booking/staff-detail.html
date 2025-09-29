@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+  <link as="style"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend%3Awght%40400%3B500%3B700%3B900"
+    onload="this.rel='stylesheet'" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#38e07b',
+            'background-light': '#f6f8f7',
+            'background-dark': '#122017',
+          },
+          fontFamily: {
+            display: ['Lexend'],
+          },
+          borderRadius: {
+            DEFAULT: '0.5rem',
+            lg: '1rem',
+            xl: '1.5rem',
+            full: '9999px',
+          },
+        },
+      },
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <title>Provider Profile</title>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200">
+  <div class="flex flex-col min-h-screen">
+    <header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+      <div class="flex items-center p-4">
+        <a href="/booking/select-staff.html">
+          <button class="p-2 -ml-2">
+            <span class="material-symbols-outlined text-slate-800 dark:text-slate-200"> arrow_back </span>
+          </button>
+        </a>
+        <h1 class="flex-1 text-lg font-bold text-center text-slate-900 dark:text-white">Provider Profile</h1>
+        <div class="w-10"></div>
+      </div>
+    </header>
+    <main class="flex-1 overflow-y-auto">
+      <div class="p-4 space-y-8">
+        <div class="flex flex-col items-center gap-4 text-center">
+          <div class="w-32 h-32 bg-center bg-no-repeat bg-cover rounded-full"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBcEdo6rPf5Zv7BiaDlzoSMCd7zITsVpc9GRy6hm8RiTG5dNj75jGEL7xqAq5UA-PHuImhbf4z94xzmcrB2yDAzb2e9UJt5itG2GXKNCFbwt67fpjI1X7QKyFlc7M9OGtBeC5XIwuq2-idA7m-vaOJng89SL7QfIto5JvVsOFUsNX4H9dk11_BABhuyNWQuLQ-lPXs6Znms2HIv6WZ2P4U4UHUssFnijY4ImLTG_FFg4F1VEm8Vxh0L7uQ3mJ3eNBF3KOQmoQfFSr-l");'>
+          </div>
+          <div>
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-white">Dr. Evelyn Reed</h2>
+            <p class="text-slate-600 dark:text-slate-400">Physical Therapist</p>
+            <p class="text-sm text-slate-500 dark:text-slate-400">5 years experience</p>
+          </div>
+        </div>
+        <div class="space-y-2">
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white">About</h3>
+          <p class="text-slate-600 dark:text-slate-300">
+            Dr. Reed is a licensed physical therapist specializing in geriatric care. She has extensive experience in
+            rehabilitation and pain management for elderly patients.
+          </p>
+        </div>
+        <div class="space-y-2">
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white">Specialties</h3>
+          <div class="flex flex-wrap gap-2">
+            <span
+              class="px-3 py-1 text-sm font-medium rounded-full bg-primary/10 text-primary-700 dark:bg-primary/20 dark:text-primary-300">Geriatric
+              Care</span>
+            <span
+              class="px-3 py-1 text-sm font-medium rounded-full bg-primary/10 text-primary-700 dark:bg-primary/20 dark:text-primary-300">Rehabilitation</span>
+            <span
+              class="px-3 py-1 text-sm font-medium rounded-full bg-primary/10 text-primary-700 dark:bg-primary/20 dark:text-primary-300">Pain
+              Management</span>
+          </div>
+        </div>
+        <!-- <div class="space-y-4">
+          <h3 class="text-lg font-bold text-center text-slate-900 dark:text-white">Availability</h3>
+          <div class="p-4 rounded-xl bg-background-light dark:bg-slate-800/50">
+            <div class="flex items-center justify-between mb-4">
+              <button class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700">
+                <span class="material-symbols-outlined text-slate-600 dark:text-slate-400"> chevron_left </span>
+              </button>
+              <p class="font-bold text-slate-900 dark:text-white">July 2024</p>
+              <button class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700">
+                <span class="material-symbols-outlined text-slate-600 dark:text-slate-400"> chevron_right </span>
+              </button>
+            </div>
+            <div class="grid grid-cols-7 gap-1 text-center">
+              <div class="font-bold text-slate-500 dark:text-slate-400">S</div>
+              <div class="font-bold text-slate-500 dark:text-slate-400">M</div>
+              <div class="font-bold text-slate-500 dark:text-slate-400">T</div>
+              <div class="font-bold text-slate-500 dark:text-slate-400">W</div>
+              <div class="font-bold text-slate-500 dark:text-slate-400">T</div>
+              <div class="font-bold text-slate-500 dark:text-slate-400">F</div>
+              <div class="font-bold text-slate-500 dark:text-slate-400">S</div>
+              <div class="col-start-4 w-10 h-10"></div>
+              <div class="w-10 h-10"></div>
+              <div class="w-10 h-10"></div>
+              <div class="w-10 h-10"></div>
+              <button
+                class="grid w-10 h-10 font-medium transition-colors rounded-full place-items-center bg-primary text-slate-900">5</button>
+              <button
+                class="grid w-10 h-10 font-medium transition-colors rounded-full place-items-center hover:bg-primary/20 dark:hover:bg-primary/30">6</button>
+              <button
+                class="grid w-10 h-10 font-medium transition-colors rounded-full place-items-center hover:bg-primary/20 dark:hover:bg-primary/30">7</button>
+              <button
+                class="grid w-10 h-10 font-medium transition-colors rounded-full place-items-center hover:bg-primary/20 dark:hover:bg-primary/30">8</button>
+              <button
+                class="grid w-10 h-10 font-medium transition-colors rounded-full place-items-center hover:bg-primary/20 dark:hover:bg-primary/30">9</button>
+              <button
+                class="grid w-10 h-10 font-medium transition-colors rounded-full place-items-center hover:bg-primary/20 dark:hover:bg-primary/30">10</button>
+              <button
+                class="grid w-10 h-10 font-medium transition-colors rounded-full place-items-center hover:bg-primary/20 dark:hover:bg-primary/30">11</button>
+              <button
+                class="grid w-10 h-10 font-medium transition-colors rounded-full place-items-center hover:bg-primary/20 dark:hover:bg-primary/30">12</button>
+              <button
+                class="grid w-10 h-10 font-medium transition-colors rounded-full place-items-center hover:bg-primary/20 dark:hover:bg-primary/30">13</button>
+              <button
+                class="grid w-10 h-10 font-medium transition-colors rounded-full place-items-center hover:bg-primary/20 dark:hover:bg-primary/30">14</button>
+              <button
+                class="grid w-10 h-10 font-medium transition-colors rounded-full place-items-center hover:bg-primary/20 dark:hover:bg-primary/30">15</button>
+              <button
+                class="grid w-10 h-10 font-medium transition-colors rounded-full place-items-center hover:bg-primary/20 dark:hover:bg-primary/30">16</button>
+              <button
+                class="grid w-10 h-10 font-medium transition-colors rounded-full place-items-center hover:bg-primary/20 dark:hover:bg-primary/30">17</button>
+              <button
+                class="grid w-10 h-10 font-medium transition-colors rounded-full place-items-center hover:bg-primary/20 dark:hover:bg-primary/30">18</button>
+              <button
+                class="grid w-10 h-10 font-medium transition-colors rounded-full place-items-center hover:bg-primary/20 dark:hover:bg-primary/30">19</button>
+              <button
+                class="grid w-10 h-10 font-medium transition-colors rounded-full place-items-center hover:bg-primary/20 dark:hover:bg-primary/30">20</button>
+              <button
+                class="grid w-10 h-10 font-medium transition-colors rounded-full place-items-center hover:bg-primary/20 dark:hover:bg-primary/30">21</button>
+              <button
+                class="grid w-10 h-10 font-medium transition-colors rounded-full place-items-center hover:bg-primary/20 dark:hover:bg-primary/30">22</button>
+              <button
+                class="grid w-10 h-10 font-medium transition-colors rounded-full place-items-center hover:bg-primary/20 dark:hover:bg-primary/30">23</button>
+              <button
+                class="grid w-10 h-10 font-medium transition-colors rounded-full place-items-center hover:bg-primary/20 dark:hover:bg-primary/30">24</button>
+              <button
+                class="grid w-10 h-10 font-medium transition-colors rounded-full place-items-center hover:bg-primary/20 dark:hover:bg-primary/30">25</button>
+              <button
+                class="grid w-10 h-10 font-medium transition-colors rounded-full place-items-center hover:bg-primary/20 dark:hover:bg-primary/30">26</button>
+              <button
+                class="grid w-10 h-10 font-medium transition-colors rounded-full place-items-center hover:bg-primary/20 dark:hover:bg-primary/30">27</button>
+              <button
+                class="grid w-10 h-10 font-medium transition-colors rounded-full place-items-center hover:bg-primary/20 dark:hover:bg-primary/30">28</button>
+              <button
+                class="grid w-10 h-10 font-medium transition-colors rounded-full place-items-center hover:bg-primary/20 dark:hover:bg-primary/30">29</button>
+              <button
+                class="grid w-10 h-10 font-medium transition-colors rounded-full place-items-center hover:bg-primary/20 dark:hover:bg-primary/30">30</button>
+            </div>
+          </div>
+        </div> -->
+        <div class="space-y-4">
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white">Reviews</h3>
+          <div class="flex flex-wrap items-center gap-6 p-4 rounded-xl bg-background-light dark:bg-slate-800/50">
+            <div class="text-center">
+              <p class="text-5xl font-black text-slate-900 dark:text-white">4.8</p>
+              <div class="flex justify-center text-primary">
+                <span class="material-symbols-outlined">star</span>
+                <span class="material-symbols-outlined">star</span>
+                <span class="material-symbols-outlined">star</span>
+                <span class="material-symbols-outlined">star</span>
+                <span class="material-symbols-outlined">star_half</span>
+              </div>
+              <p class="text-sm text-slate-500 dark:text-slate-400">125 reviews</p>
+            </div>
+            <div class="flex-1 min-w-[200px] space-y-1">
+              <div class="flex items-center gap-2">
+                <span class="text-sm text-slate-500 dark:text-slate-400">5</span>
+                <div class="flex-1 h-2 rounded-full bg-slate-200 dark:bg-slate-700">
+                  <div class="h-full rounded-full bg-primary" style="width: 70%"></div>
+                </div>
+                <span class="text-sm font-medium text-slate-600 dark:text-slate-300 w-9">70%</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-sm text-slate-500 dark:text-slate-400">4</span>
+                <div class="flex-1 h-2 rounded-full bg-slate-200 dark:bg-slate-700">
+                  <div class="h-full rounded-full bg-primary" style="width: 20%"></div>
+                </div>
+                <span class="text-sm font-medium text-slate-600 dark:text-slate-300 w-9">20%</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-sm text-slate-500 dark:text-slate-400">3</span>
+                <div class="flex-1 h-2 rounded-full bg-slate-200 dark:bg-slate-700">
+                  <div class="h-full rounded-full bg-primary" style="width: 5%"></div>
+                </div>
+                <span class="text-sm font-medium text-slate-600 dark:text-slate-300 w-9">5%</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-sm text-slate-500 dark:text-slate-400">2</span>
+                <div class="flex-1 h-2 rounded-full bg-slate-200 dark:bg-slate-700">
+                  <div class="h-full rounded-full bg-primary" style="width: 3%"></div>
+                </div>
+                <span class="text-sm font-medium text-slate-600 dark:text-slate-300 w-9">3%</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-sm text-slate-500 dark:text-slate-400">1</span>
+                <div class="flex-1 h-2 rounded-full bg-slate-200 dark:bg-slate-700">
+                  <div class="h-full rounded-full bg-primary" style="width: 2%"></div>
+                </div>
+                <span class="text-sm font-medium text-slate-600 dark:text-slate-300 w-9">2%</span>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-6">
+            <div class="p-4 space-y-3 rounded-lg bg-background-light dark:bg-slate-800/50">
+              <div class="flex items-start gap-3">
+                <img alt="Clara Bennett" class="w-10 h-10 rounded-full"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3gVDIdMBPf42a7Nfw9FnLzyH7SU9mgDV5JLNvOn0po6ckcPGuP1U_h5Tu7MV1Od43stqfeoxBn9OI2-TQ_fUnR-VboTM4IHPEvy0HgSvB_iNDcdeuKcWiELxMkpDnogW_yJJa32MghNEkCpyLaaRPUAc5dNuRMuVvJKKukJJUYNjEBsTpqL4Q7UpZB_mZAbEmdJ7rvmzTvAUZ_TQqoxSwfQ5huIm84d1OmanMQhIOq3M5SLRV9_yVHiuC6tGewS8FMr9KsC6Jp4c0" />
+                <div class="flex-1">
+                  <p class="font-medium text-slate-900 dark:text-white">Clara Bennett</p>
+                  <p class="text-sm text-slate-500 dark:text-slate-400">2 months ago</p>
+                </div>
+                <div class="flex text-primary">
+                  <span class="material-symbols-outlined text-base">star</span>
+                  <span class="material-symbols-outlined text-base">star</span>
+                  <span class="material-symbols-outlined text-base">star</span>
+                  <span class="material-symbols-outlined text-base">star</span>
+                  <span class="material-symbols-outlined text-base">star</span>
+                </div>
+              </div>
+              <p class="text-slate-600 dark:text-slate-300">
+                Dr. Reed is incredibly patient and understanding. She helped me regain my mobility after my surgery.
+              </p>
+            </div>
+            <div class="p-4 space-y-3 rounded-lg bg-background-light dark:bg-slate-800/50">
+              <div class="flex items-start gap-3">
+                <img alt="Samuel Harper" class="w-10 h-10 rounded-full"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqXNhOSXC19W7rLJHe-kIX2M3pA8RVsYHgDXccRwtbY8YPZU_ipe8-tAfHJ0qENnz1XTrmIRhEjWROduqpiQz295-Uu1BtVZ5vBlqRERVBBxFGi6JTGTvKMA6PAOcf83rlQsYghuC6hQsqKRF8SKIkIXu42D3VXF-p2iNYWt14dNNxC9uMMFD4HBllvDh1Sm5JuZ5XowlYLMaGYAmBN8VwHHiVcuPxoAzTyE3KLMRsCTLEZMZee0CEXvejmsDq6R9Rnc2mEwQxHmks" />
+                <div class="flex-1">
+                  <p class="font-medium text-slate-900 dark:text-white">Samuel Harper</p>
+                  <p class="text-sm text-slate-500 dark:text-slate-400">3 months ago</p>
+                </div>
+                <div class="flex text-primary">
+                  <span class="material-symbols-outlined text-base">star</span>
+                  <span class="material-symbols-outlined text-base">star</span>
+                  <span class="material-symbols-outlined text-base">star</span>
+                  <span class="material-symbols-outlined text-base">star</span>
+                  <span class="material-symbols-outlined text-base text-slate-300 dark:text-slate-600">star</span>
+                </div>
+              </div>
+              <p class="text-slate-600 dark:text-slate-300">Dr. Reed is knowledgeable and professional. I appreciate her
+                thorough approach to therapy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+</body>
+
+</html>

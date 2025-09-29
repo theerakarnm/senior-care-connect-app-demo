@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Stitch Design</title>
+  <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700;900&amp;display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#38e07b",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101c22",
+          },
+          fontFamily: {
+            "display": ["Lexend"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    .font-display {
+      font-family: 'Lexend', sans-serif;
+    }
+
+    .text-strong {
+      color: #101c22;
+    }
+
+    .dark .text-strong {
+      color: #f6f7f8;
+    }
+
+    .text-medium {
+      color: #617c89;
+    }
+
+    .dark .text-medium {
+      color: #94a3b8;
+    }
+
+    .text-weak {
+      color: #94a3b8;
+    }
+
+    .dark .text-weak {
+      color: #617c89;
+    }
+
+    .bg-subtle-light {
+      background-color: #e2e8f0;
+    }
+
+    .dark .bg-subtle-dark {
+      background-color: #1e293b;
+    }
+
+    .border-subtle-light {
+      border-color: #e2e8f0;
+    }
+
+    .dark .border-subtle-dark {
+      border-color: #1e293b;
+    }
+  </style>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display">
+  <div class="flex flex-col min-h-screen justify-between">
+    <div class="flex-grow">
+      <header class="flex items-center p-4">
+        <button class="p-2 rounded-full text-strong">
+          <svg fill="currentColor" height="28" viewBox="0 0 256 256" width="28" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z">
+            </path>
+          </svg>
+        </button>
+        <h1 class="flex-1 text-center text-xl font-bold pr-10 text-strong">Book Appointment</h1>
+      </header>
+      <main class="px-4 pb-4">
+        <section class="mb-6">
+          <h2 class="text-2xl font-bold mb-4 text-strong">Select Date</h2>
+          <div class="bg-white dark:bg-background-dark rounded-xl shadow-sm p-4">
+            <div class="flex justify-between items-center mb-4">
+              <button class="p-2 rounded-full text-strong">
+                <svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z">
+                  </path>
+                </svg>
+              </button>
+              <p class="text-lg font-bold text-strong">October 2024</p>
+              <button class="p-2 rounded-full text-strong">
+                <svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z">
+                  </path>
+                </svg>
+              </button>
+            </div>
+            <div class="grid grid-cols-7 gap-2 text-center text-base">
+              <div class="font-bold text-medium">S</div>
+              <div class="font-bold text-medium">M</div>
+              <div class="font-bold text-medium">T</div>
+              <div class="font-bold text-medium">W</div>
+              <div class="font-bold text-medium">T</div>
+              <div class="font-bold text-medium">F</div>
+              <div class="font-bold text-medium">S</div>
+              <div class="col-start-4 h-12 w-12 flex items-center justify-center rounded-full text-strong">1</div>
+              <div class="h-12 w-12 flex items-center justify-center rounded-full text-strong">2</div>
+              <div class="h-12 w-12 flex items-center justify-center rounded-full text-strong">3</div>
+              <div class="h-12 w-12 flex items-center justify-center rounded-full text-strong">4</div>
+              <div class="h-12 w-12 flex items-center justify-center rounded-full bg-primary text-white">5</div>
+              <div class="h-12 w-12 flex items-center justify-center rounded-full text-strong">6</div>
+              <div class="h-12 w-12 flex items-center justify-center rounded-full text-strong">7</div>
+              <div class="h-12 w-12 flex items-center justify-center rounded-full text-strong">8</div>
+              <div class="h-12 w-12 flex items-center justify-center rounded-full text-strong">9</div>
+              <div class="h-12 w-12 flex items-center justify-center rounded-full text-strong">10</div>
+              <div class="h-12 w-12 flex items-center justify-center rounded-full text-strong">11</div>
+              <div class="h-12 w-12 flex items-center justify-center rounded-full text-strong">12</div>
+              <div class="h-12 w-12 flex items-center justify-center rounded-full text-strong">13</div>
+              <div class="h-12 w-12 flex items-center justify-center rounded-full text-strong">14</div>
+              <div class="h-12 w-12 flex items-center justify-center rounded-full text-strong">15</div>
+              <div class="h-12 w-12 flex items-center justify-center rounded-full text-strong">16</div>
+              <div class="h-12 w-12 flex items-center justify-center rounded-full text-strong">17</div>
+              <div class="h-12 w-12 flex items-center justify-center rounded-full text-strong">18</div>
+              <div class="h-12 w-12 flex items-center justify-center rounded-full text-strong">19</div>
+              <div class="h-12 w-12 flex items-center justify-center rounded-full text-strong">20</div>
+              <div class="h-12 w-12 flex items-center justify-center rounded-full text-strong">21</div>
+              <div class="h-12 w-12 flex items-center justify-center rounded-full text-strong">22</div>
+              <div class="h-12 w-12 flex items-center justify-center rounded-full text-strong">23</div>
+              <div class="h-12 w-12 flex items-center justify-center rounded-full text-strong">24</div>
+              <div class="h-12 w-12 flex items-center justify-center rounded-full text-strong">25</div>
+              <div class="h-12 w-12 flex items-center justify-center rounded-full text-strong">26</div>
+              <div class="h-12 w-12 flex items-center justify-center rounded-full text-strong">27</div>
+              <div class="h-12 w-12 flex items-center justify-center rounded-full text-strong">28</div>
+              <div class="h-12 w-12 flex items-center justify-center rounded-full text-strong">29</div>
+              <div class="h-12 w-12 flex items-center justify-center rounded-full text-strong">30</div>
+              <div class="h-12 w-12 flex items-center justify-center rounded-full text-strong">31</div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2 class="text-2xl font-bold mb-4 text-strong">Select Time</h2>
+          <div class="grid grid-cols-3 gap-3">
+            <button
+              class="py-3 px-4 rounded-lg bg-subtle-light dark:bg-subtle-dark text-strong font-semibold text-lg">9:00
+              AM</button>
+            <button class="py-3 px-4 rounded-lg bg-primary text-white font-semibold text-lg">10:00 AM</button>
+            <button
+              class="py-3 px-4 rounded-lg bg-subtle-light dark:bg-subtle-dark text-strong font-semibold text-lg">11:00
+              AM</button>
+            <button
+              class="py-3 px-4 rounded-lg bg-subtle-light dark:bg-subtle-dark text-strong font-semibold text-lg">1:00
+              PM</button>
+            <button
+              class="py-3 px-4 rounded-lg bg-subtle-light dark:bg-subtle-dark text-strong font-semibold text-lg">2:00
+              PM</button>
+            <button
+              class="py-3 px-4 rounded-lg bg-subtle-light dark:bg-subtle-dark text-strong font-semibold text-lg">3:00
+              PM</button>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="sticky bottom-0 bg-background-light dark:bg-background-dark pb-safe">
+      <div class="p-4 border-t border-subtle-light dark:border-subtle-dark">
+        <a href="/booking/booking.html">
+          <button
+            class="w-full bg-primary text-white font-bold py-4 px-5 rounded-xl text-lg tracking-wide">Select</button>
+        </a>
+      </div>
+      <nav class="flex justify-around items-center py-2 border-t border-subtle-light dark:border-subtle-dark">
+        <a class="flex flex-col items-center gap-1 text-medium" href="#">
+          <svg fill="currentColor" height="28" viewBox="0 0 256 256" width="28" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z">
+            </path>
+          </svg>
+          <span class="text-xs font-medium">Home</span>
+        </a>
+        <a class="flex flex-col items-center gap-1 text-primary" href="#">
+          <svg fill="currentColor" height="28" viewBox="0 0 256 256" width="28" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM112,184a8,8,0,0,1-16,0V132.94l-4.42,2.22a8,8,0,0,1-7.16-14.32l16-8A8,8,0,0,1,112,120Zm56-8a8,8,0,0,1,0,16H136a8,8,0,0,1-6.4-12.8l28.78-38.37A8,8,0,1,0,145.07,132a8,8,0,1,1-13.85-8A24,24,0,0,1,176,136a23.76,23.76,0,0,1-4.84,14.45L152,176ZM48,80V48H72v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80Z">
+            </path>
+          </svg>
+          <span class="text-xs font-medium">Bookings</span>
+        </a>
+        <a class="flex flex-col items-center gap-1 text-medium" href="#">
+          <svg fill="currentColor" height="28" viewBox="0 0 256 256" width="28" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z">
+            </path>
+          </svg>
+          <span class="text-xs font-medium">Profile</span>
+        </a>
+        <a class="flex flex-col items-center gap-1 text-medium" href="#">
+          <svg fill="currentColor" height="28" viewBox="0 0 256 256" width="28" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z">
+            </path>
+          </svg>
+          <span class="text-xs font-medium">More</span>
+        </a>
+      </nav>
+    </footer>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Stitch Design</title>
+  <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+  <link as="style"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend:wght@400;500;700;900&amp;family=Noto+Sans:wght@400;500;700;900"
+    onload="this.rel='stylesheet'" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#38e07b",
+            "background-light": "#f6f8f7",
+            "background-dark": "#122017",
+          },
+          fontFamily: {
+            "display": ["Lexend"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark text-black dark:text-white">
+  <div class="relative flex h-auto min-h-screen w-full flex-col justify-between group/design-root overflow-x-hidden">
+    <div class="flex flex-col">
+      <header class="flex items-center p-4 pb-2">
+        <a href="/dashboard.html">
+          <button
+            class="flex size-10 items-center justify-center rounded-full bg-background-light dark:bg-background-dark/50">
+            <svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z">
+              </path>
+            </svg>
+          </button>
+        </a>
+        <h1 class="flex-1 text-center text-xl font-bold tracking-tight pr-10">My Profile</h1>
+      </header>
+      <div class="p-4 flex flex-col items-center">
+        <div class="relative">
+          <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-32 w-32"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDP5bhXoeuYiMTls-pKnbPsDOzovywrlGTjUqcTfrm3HeL3_yiNk1_qJHVjAiszuAGWP2Xb1vfgkt1uecQXUf3pibKlsuZa2Qu7ijuUnI_Rkf0ID6t56Za0Ecd5dqEJqb4SjHomhTZYB5nzVYogJeAFBP8lNGDbnx-m_J3lg0IBgakSWX4OauSeYslojeM4-gHEVhgyshGeV5BtslZMBZeImwMZo9Ecfpzm9dxMvOTf3Aq_Dqdmba9nNrzsOkmrVwWi-JJnD4AvXm4C");'>
+          </div>
+          <button
+            class="absolute bottom-0 right-0 flex items-center justify-center size-8 bg-primary text-white rounded-full">
+            <svg fill="currentColor" height="16px" viewBox="0 0 256 256" width="16px"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M227.31,73.37,182.63,28.68a16,16,0,0,0-22.63,0L36.69,152A15.86,15.86,0,0,0,32,163.31V208a16,16,0,0,0,16,16H92.69A15.86,15.86,0,0,0,104,219.31L227.31,96a16,16,0,0,0,0-22.63ZM192,108.68,147.31,64,176,35.31,220.69,80ZM96,208H48V160h48v48Z">
+              </path>
+            </svg>
+          </button>
+        </div>
+        <div class="text-center mt-4">
+          <p class="text-2xl font-bold">Sophia Carter</p>
+          <p class="text-sm text-black/60 dark:text-white/60">Resident ID: 12345</p>
+        </div>
+      </div>
+      <div class="px-4 space-y-4">
+        <div class="space-y-2">
+          <div class="flex justify-between items-center">
+            <h2 class="text-lg font-bold">Personal Information</h2>
+            <button class="text-primary text-sm font-medium">Edit</button>
+          </div>
+          <div class="bg-white dark:bg-background-dark/50 rounded-lg p-4 space-y-3">
+            <div class="flex justify-between">
+              <p class="text-black/60 dark:text-white/60">Gender</p>
+              <p class="font-medium">Female</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-black/60 dark:text-white/60">Date of Birth</p>
+              <p class="font-medium">July 15, 1945</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-black/60 dark:text-white/60">Address</p>
+              <p class="font-medium">123 Maple Street</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-black/60 dark:text-white/60">Phone Number</p>
+              <p class="font-medium">(555) 123-4567</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-black/60 dark:text-white/60">Email</p>
+              <p class="font-medium">sophia.carter@email.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-2">
+          <div class="flex justify-between items-center">
+            <h2 class="text-lg font-bold">Medical History</h2>
+            <button class="text-primary text-sm font-medium">Edit</button>
+          </div>
+          <div class="bg-white dark:bg-background-dark/50 rounded-lg p-4 space-y-3">
+            <div class="flex justify-between">
+              <p class="text-black/60 dark:text-white/60">Conditions</p>
+              <p class="font-medium">High blood pressure, arthritis</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-black/60 dark:text-white/60">Allergies</p>
+              <p class="font-medium">None</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-black/60 dark:text-white/60">Dietary Restrictions</p>
+              <p class="font-medium">None</p>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-2">
+          <div class="flex justify-between items-center">
+            <h2 class="text-lg font-bold">Medications</h2>
+            <button class="text-primary text-sm font-medium">Edit</button>
+          </div>
+          <div class="bg-white dark:bg-background-dark/50 rounded-lg p-4">
+            <div class="flex justify-between">
+              <p class="text-black/60 dark:text-white/60">Current Medications</p>
+              <p class="font-medium">Lisinopril, Ibuprofen</p>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-2">
+          <div class="flex justify-between items-center">
+            <h2 class="text-lg font-bold">Emergency Contact</h2>
+            <button class="text-primary text-sm font-medium">Edit</button>
+          </div>
+          <div class="bg-white dark:bg-background-dark/50 rounded-lg p-4 space-y-3">
+            <div class="flex justify-between">
+              <p class="text-black/60 dark:text-white/60">Name</p>
+              <p class="font-medium">Ethan Carter</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-black/60 dark:text-white/60">Relationship</p>
+              <p class="font-medium">Son</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-black/60 dark:text-white/60">Phone Number</p>
+              <p class="font-medium">(555) 987-6543</p>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-2 pb-4">
+          <div class="flex justify-between items-center">
+            <h2 class="text-lg font-bold">Insurance Information</h2>
+            <button class="text-primary text-sm font-medium">Edit</button>
+          </div>
+          <div class="bg-white dark:bg-background-dark/50 rounded-lg p-4 space-y-3">
+            <div class="flex justify-between">
+              <p class="text-black/60 dark:text-white/60">Provider</p>
+              <p class="font-medium">Medicare</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-black/60 dark:text-white/60">Policy Number</p>
+              <p class="font-medium">1234567890</p>
+            </div>
+          </div>
+        </div>
+        <div class="h-24"></div>
+      </div>
+    </div>
+    <footer
+      class="fixed bottom-0 left-0 right-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-gray-200 dark:border-gray-800 z-20">
+      <nav class="flex justify-around p-2">
+        <a class="flex flex-col items-center justify-center gap-1 w-1/4 p-2 rounded-lg text-primary"
+          href="/dashboard.html">
+          <span class="material-symbols-outlined text-3xl">home</span>
+          <span class="text-xs font-medium">Home</span>
+        </a>
+        <a class="flex flex-col items-center justify-center gap-1 w-1/4 p-2 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-primary/20 hover:text-primary transition-colors"
+          href="/booking/service-select.html">
+          <span class="material-symbols-outlined text-3xl">calendar_month</span>
+          <span class="text-xs font-medium">Bookings</span>
+        </a>
+        <a class="flex flex-col items-center justify-center gap-1 w-1/4 p-2 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-primary/20 hover:text-primary transition-colors"
+          href="/profile.html">
+          <span class="material-symbols-outlined text-3xl">person</span>
+          <span class="text-xs font-medium">Profile</span>
+        </a>
+        <a class="flex flex-col items-center justify-center gap-1 w-1/4 p-2 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-primary/20 hover:text-primary transition-colors"
+          href="#">
+          <span class="material-symbols-outlined text-3xl">menu</span>
+          <span class="text-xs font-medium">More</span>
+        </a>
+      </nav>
+    </footer>
+  </div>
+
+</body>
+
+</html>

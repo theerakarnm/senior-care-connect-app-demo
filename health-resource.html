@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Stitch Design</title>
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+  <link as="style"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend%3Awght%40400%3B500%3B700%3B900"
+    onload="this.rel='stylesheet'" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#38e07b",
+            "background-light": "#f6f8f7",
+            "background-dark": "#122017",
+          },
+          fontFamily: {
+            "display": ["Lexend"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display">
+  <div class="relative flex min-h-screen w-full flex-col justify-between overflow-x-hidden">
+    <div class="flex-grow">
+      <header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+        <div class="flex items-center p-4">
+          <a href="/dashboard.html">
+            <button class="text-black dark:text-white">
+              <span class="material-symbols-outlined text-3xl">arrow_back</span>
+            </button>
+          </a>
+          <h1 class="flex-1 text-center text-xl font-bold text-black dark:text-white pr-8">Health Resources</h1>
+        </div>
+      </header>
+      <main class="p-4">
+        <div class="relative mb-6">
+          <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-primary">search</span>
+          <input
+            class="w-full rounded-full border-0 bg-white dark:bg-black/20 py-3 pl-12 pr-4 text-black dark:text-white placeholder:text-black/50 dark:placeholder:text-white/50 focus:ring-2 focus:ring-primary/50"
+            placeholder="Search health resources" type="text" />
+        </div>
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-black dark:text-white mb-4">Categories</h2>
+          <div class="flex flex-wrap gap-2">
+            <button
+              class="rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-black dark:text-white dark:bg-primary/20">Therapy</button>
+            <button
+              class="rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-black dark:text-white dark:bg-primary/20">Nursing</button>
+            <button
+              class="rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-black dark:text-white dark:bg-primary/20">Wellness</button>
+            <button
+              class="rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-black dark:text-white dark:bg-primary/20">Nutrition</button>
+            <button
+              class="rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-black dark:text-white dark:bg-primary/20">Medication</button>
+          </div>
+        </section>
+        <section>
+          <h2 class="text-2xl font-bold text-black dark:text-white mb-4">Featured Resources</h2>
+          <div class="space-y-4">
+            <div class="flex items-start gap-4 rounded-lg bg-white dark:bg-black/20 p-4">
+              <div class="flex-1">
+                <p class="text-sm font-medium text-primary mb-1">Article</p>
+                <h3 class="text-lg font-bold text-black dark:text-white mb-1">Managing Chronic Pain in Seniors</h3>
+                <p class="text-sm text-black/60 dark:text-white/60">Learn effective strategies for pain management and
+                  improving quality of life.</p>
+              </div>
+              <div class="w-24 h-24 flex-shrink-0 rounded-lg bg-cover bg-center"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCE4C1HQp2ezAmNbynLpalaktr9Ij2NU64LjdjWLcRminTzLB6dc34rY8W4csIMz5IOC_eE3VsIXVFNo0e5ARi32wiSmD5QuBTSQZu8X9Ln0d9yVCCrx7P6pnxGABBt6crVyoPaFkoeVmQpjjoduysN2rTv5T93jLzijRPcVG_bayfmK8lWaRUKg6K3xrk_lsEQFKSna_aNvBDK9fkiGh0IZW1AP0h44xEJLcDRGFTNdnZKWCNhpjYddu0PgmPl1yqj8hPesuwyHYQM');">
+              </div>
+            </div>
+            <div class="flex items-start gap-4 rounded-lg bg-white dark:bg-black/20 p-4">
+              <div class="flex-1">
+                <p class="text-sm font-medium text-primary mb-1">Video</p>
+                <h3 class="text-lg font-bold text-black dark:text-white mb-1">Healthy Eating for Seniors</h3>
+                <p class="text-sm text-black/60 dark:text-white/60">Discover nutritious meal ideas and dietary tips for
+                  maintaining health.</p>
+              </div>
+              <div class="w-24 h-24 flex-shrink-0 rounded-lg bg-cover bg-center"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAGRVqQQpb5nCPZMYJOmBPqUjvMPTIXPKfEpWWAMNGTCfS9pg2cGPlicc8u0ThmAJjhnaqZjOM7lBrJdirT0821RgoT4r6gXt279LpO-GlZ2zsm7QbD4pQCtF5QRPkSgbJkIA9n7cUVYT230LFcK7P1PoHHN5YWJYUYhRYoSTKfSJvxPgACRLEiaWySdWrAoS_zsV-MgINL7bsTT_346GMleXxkyoZ6MN3fwZMToMa3tfdSXwcuXEctToqxzi8oN2wcNx9NUr3_x5SF');">
+              </div>
+            </div>
+            <div class="flex items-start gap-4 rounded-lg bg-white dark:bg-black/20 p-4">
+              <div class="flex-1">
+                <p class="text-sm font-medium text-primary mb-1">Infographic</p>
+                <h3 class="text-lg font-bold text-black dark:text-white mb-1">Preventing Falls in the Elderly</h3>
+                <p class="text-sm text-black/60 dark:text-white/60">Important safety measures to reduce the risk of
+                  falls and injuries.</p>
+              </div>
+              <div class="w-24 h-24 flex-shrink-0 rounded-lg bg-cover bg-center"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBDt19YAa2eNiys_b_ktUXn_djj2IC4Z9P0UzCahLIbznO2KTterxYWMCMbwJ-xDasC93xEYyqrZGmj6TH-9mRt3lqJ60tnCQd6qEQhWGKi2MXm4hPe-ld96ciMvgYwaGOKbDb0stYNdG3gEITlihvsG9DzFaI1_BvA35q8xZvF45OpQY7TossqericzjjymUD2mhEeMMh-Dr0q5Oxi1C06jbXBl43nLSCwPI0TIQG3sj9qcGEZiePKdzh7lhxWhy2zg8azqfwOzEkV');">
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer
+      class="sticky bottom-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-black/10 dark:border-white/10 pb-3">
+      <nav class="flex justify-around items-center pt-2">
+        <a class="flex flex-col items-center gap-1 text-black/60 dark:text-white/60" href="#">
+          <span class="material-symbols-outlined">home</span>
+          <span class="text-xs font-medium">Home</span>
+        </a>
+        <a class="flex flex-col items-center gap-1 text-black/60 dark:text-white/60" href="#">
+          <span class="material-symbols-outlined">calendar_month</span>
+          <span class="text-xs font-medium">Bookings</span>
+        </a>
+        <a class="flex flex-col items-center gap-1 text-black/60 dark:text-white/60" href="#">
+          <span class="material-symbols-outlined">person</span>
+          <span class="text-xs font-medium">Profile</span>
+        </a>
+        <a class="flex flex-col items-center gap-1 text-primary" href="#">
+          <div class="bg-primary/20 dark:bg-primary/30 rounded-full p-2">
+            <span class="material-symbols-outlined text-primary">article</span>
+          </div>
+          <span class="text-xs font-bold">Resources</span>
+        </a>
+      </nav>
+    </footer>
+  </div>
+
+</body>
+
+</html>

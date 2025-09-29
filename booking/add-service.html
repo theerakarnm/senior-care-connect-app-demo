@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+  <link as="style"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    onload="this.rel='stylesheet'" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <title>Stitch Design</title>
+  <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#38e07b",
+            "background-light": "#f6f8f7",
+            "background-dark": "#122017",
+          },
+          fontFamily: {
+            display: ["Lexend"],
+          },
+          borderRadius: {
+            DEFAULT: "0.5rem",
+            lg: "1rem",
+            xl: "1.5rem",
+            full: "9999px"
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    body {
+      min-height: max(884px, 100 dvh);
+    }
+  </style>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+  <div class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
+    <div class="flex-grow">
+      <header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm p-4">
+        <div class="flex items-center justify-between">
+          <button
+            class="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/20 text-gray-800 dark:text-gray-200">
+            <span class="material-symbols-outlined"> arrow_back </span>
+          </button>
+          <h1 class="text-lg font-bold">Service Booking</h1>
+          <div class="size-10"></div>
+        </div>
+      </header>
+      <main class="p-4 space-y-6">
+        <div class="space-y-4">
+          <div class="rounded-xl bg-background-dark/5 dark:bg-background-light/5 p-4 space-y-4">
+            <div class="flex justify-between items-center">
+              <h2 class="font-bold text-lg text-gray-900 dark:text-white">Therapy</h2>
+              <button class="text-red-500">
+                <span class="material-symbols-outlined"> delete </span>
+              </button>
+            </div>
+            <div class="space-y-3">
+              <div>
+                <label class="text-sm font-medium text-gray-500 dark:text-gray-400" for="therapy-date">Date</label>
+                <div class="relative mt-1">
+                  <span
+                    class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500">
+                    calendar_today </span>
+                  <input
+                    class="w-full rounded-lg border-none bg-background-light dark:bg-background-dark py-3 pl-10 pr-4 text-gray-800 dark:text-gray-200 placeholder-gray-400 dark:placeholder-gray-500 focus:ring-2 focus:ring-primary/50"
+                    id="therapy-date" placeholder="Select a date" type="text" />
+                </div>
+              </div>
+              <div>
+                <label class="text-sm font-medium text-gray-500 dark:text-gray-400"
+                  for="therapy-location">Location</label>
+                <div class="relative mt-1">
+                  <span
+                    class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500">
+                    location_on </span>
+                  <select
+                    class="w-full appearance-none rounded-lg border-none bg-background-light dark:bg-background-dark py-3 pl-10 pr-10 text-gray-800 dark:text-gray-200 focus:ring-2 focus:ring-primary/50"
+                    id="therapy-location">
+                    <option>Room 101</option>
+                    <option>Therapy Center</option>
+                    <option>Common Area</option>
+                  </select>
+                  <span
+                    class="material-symbols-outlined pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500">
+                    expand_more </span>
+                </div>
+              </div>
+              <div>
+                <label class="text-sm font-medium text-gray-500 dark:text-gray-400" for="therapy-staff">Staff
+                  (Optional)</label>
+                <div class="relative mt-1">
+                  <span
+                    class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500">
+                    person_outline </span>
+                  <select
+                    class="w-full appearance-none rounded-lg border-none bg-background-light dark:bg-background-dark py-3 pl-10 pr-10 text-gray-800 dark:text-gray-200 focus:ring-2 focus:ring-primary/50"
+                    id="therapy-staff">
+                    <option>Any available staff</option>
+                    <option>Dr. David Lee</option>
+                  </select>
+                  <span
+                    class="material-symbols-outlined pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500">
+                    expand_more </span>
+                </div>
+              </div>
+              <div class="space-y-3 pt-2">
+                <label class="text-sm font-medium text-gray-500 dark:text-gray-400">Addons (Tools/Equipment for
+                  rent)</label>
+                <div class="grid grid-cols-2 gap-3">
+                  <label
+                    class="flex items-center gap-3 rounded-lg bg-background-light dark:bg-background-dark p-3 cursor-pointer ring-2 ring-transparent has-[:checked]:ring-primary transition-all">
+                    <input
+                      class="form-checkbox rounded-md border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark text-primary focus:ring-primary/50"
+                      name="addons-therapy" type="checkbox" />
+                    <div class="flex-1">
+                      <p class="font-medium text-gray-900 dark:text-white">Wheelchair</p>
+                      <p class="text-sm text-gray-500 dark:text-gray-400">$5/day</p>
+                    </div>
+                  </label>
+                  <label
+                    class="flex items-center gap-3 rounded-lg bg-background-light dark:bg-background-dark p-3 cursor-pointer ring-2 ring-transparent has-[:checked]:ring-primary transition-all">
+                    <input checked=""
+                      class="form-checkbox rounded-md border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark text-primary focus:ring-primary/50"
+                      name="addons-therapy" type="checkbox" />
+                    <div class="flex-1">
+                      <p class="font-medium text-gray-900 dark:text-white">Crutches</p>
+                      <p class="text-sm text-gray-500 dark:text-gray-400">$3/day</p>
+                    </div>
+                  </label>
+                  <label
+                    class="flex items-center gap-3 rounded-lg bg-background-light dark:bg-background-dark p-3 cursor-pointer ring-2 ring-transparent has-[:checked]:ring-primary transition-all">
+                    <input
+                      class="form-checkbox rounded-md border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark text-primary focus:ring-primary/50"
+                      name="addons-therapy" type="checkbox" />
+                    <div class="flex-1">
+                      <p class="font-medium text-gray-900 dark:text-white">Walker</p>
+                      <p class="text-sm text-gray-500 dark:text-gray-400">$4/day</p>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-xl bg-background-dark/5 dark:bg-background-light/5 p-4 space-y-4">
+            <div class="flex justify-between items-center">
+              <h2 class="font-bold text-lg text-gray-900 dark:text-white">Nursing</h2>
+              <button class="text-red-500">
+                <span class="material-symbols-outlined"> delete </span>
+              </button>
+            </div>
+            <div class="space-y-3">
+              <div>
+                <label class="text-sm font-medium text-gray-500 dark:text-gray-400" for="nursing-date">Date</label>
+                <div class="relative mt-1">
+                  <span
+                    class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500">
+                    calendar_today </span>
+                  <input
+                    class="w-full rounded-lg border-none bg-background-light dark:bg-background-dark py-3 pl-10 pr-4 text-gray-800 dark:text-gray-200 placeholder-gray-400 dark:placeholder-gray-500 focus:ring-2 focus:ring-primary/50"
+                    id="nursing-date" placeholder="Select a date" type="text" />
+                </div>
+              </div>
+              <div>
+                <label class="text-sm font-medium text-gray-500 dark:text-gray-400"
+                  for="nursing-location">Location</label>
+                <div class="relative mt-1">
+                  <span
+                    class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500">
+                    location_on </span>
+                  <select
+                    class="w-full appearance-none rounded-lg border-none bg-background-light dark:bg-background-dark py-3 pl-10 pr-10 text-gray-800 dark:text-gray-200 focus:ring-2 focus:ring-primary/50"
+                    id="nursing-location">
+                    <option>Resident's Room</option>
+                    <option>Clinic</option>
+                  </select>
+                  <span
+                    class="material-symbols-outlined pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500">
+                    expand_more </span>
+                </div>
+              </div>
+              <div>
+                <label class="text-sm font-medium text-gray-500 dark:text-gray-400" for="nursing-staff">Staff
+                  (Optional)</label>
+                <div class="relative mt-1">
+                  <span
+                    class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500">
+                    person_outline </span>
+                  <select
+                    class="w-full appearance-none rounded-lg border-none bg-background-light dark:bg-background-dark py-3 pl-10 pr-10 text-gray-800 dark:text-gray-200 focus:ring-2 focus:ring-primary/50"
+                    id="nursing-staff">
+                    <option>Any available staff</option>
+                    <option>Dr. Emily Carter</option>
+                    <option>Dr. Sarah Chen</option>
+                  </select>
+                  <span
+                    class="material-symbols-outlined pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500">
+                    expand_more </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="w-full flex items-center justify-center gap-2 rounded-lg border-2 border-dashed border-primary/50 bg-primary/10 dark:bg-primary/20 py-4 text-primary font-bold">
+          <span class="material-symbols-outlined"> add_circle </span>
+          <span>Add Service</span>
+        </button>
+        <button class="w-full rounded-full bg-primary py-4 text-lg font-bold text-white">Confirm Booking</button>
+      </main>
+    </div>
+    <footer
+      class="sticky bottom-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-background-dark/5 dark:border-background-light/5">
+      <nav class="flex justify-around p-2">
+        <a class="flex flex-1 flex-col items-center justify-center gap-1 rounded-full p-2 text-primary" href="#">
+          <span class="material-symbols-outlined"> home </span>
+          <p class="text-xs font-medium">Home</p>
+        </a>
+        <a class="flex flex-1 flex-col items-center justify-center gap-1 rounded-full p-2 text-gray-400 dark:text-gray-500"
+          href="#">
+          <span class="material-symbols-outlined"> calendar_month </span>
+          <p class="text-xs font-medium">Bookings</p>
+        </a>
+        <a class="flex flex-1 flex-col items-center justify-center gap-1 rounded-full p-2 text-gray-400 dark:text-gray-500"
+          href="#">
+          <span class="material-symbols-outlined"> person </span>
+          <p class="text-xs font-medium">Profile</p>
+        </a>
+        <a class="flex flex-1 flex-col items-center justify-center gap-1 rounded-full p-2 text-gray-400 dark:text-gray-500"
+          href="#">
+          <span class="material-symbols-outlined"> menu </span>
+          <p class="text-xs font-medium">More</p>
+        </a>
+      </nav>
+      <div class="h-safe-area-bottom bg-background-light dark:bg-background-dark"></div>
+    </footer>
+    <div class="fixed inset-0 z-50 flex items-end justify-center bg-black/50 backdrop-blur-sm">
+      <div class="w-full max-w-md rounded-t-xl bg-background-light dark:bg-background-dark shadow-lg">
+        <div class="p-4 border-b border-background-dark/5 dark:border-background-light/5">
+          <div class="flex justify-between items-center">
+            <h2 class="text-lg font-bold text-gray-900 dark:text-white">Add Service</h2>
+            <a href="/booking/booking.html">
+              <button class="text-gray-500 dark:text-gray-400">
+                <span class="material-symbols-outlined"> close </span>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="p-4 space-y-6">
+          <div class="space-y-4">
+            <h3 class="font-bold text-gray-900 dark:text-white">From your package (2 left)</h3>
+            <div class="space-y-3">
+              <div
+                class="flex justify-between items-center rounded-lg bg-background-dark/5 dark:bg-background-light/5 p-3">
+                <div class="flex items-center gap-3">
+                  <div class="flex size-10 items-center justify-center rounded-full bg-primary/20 text-primary">
+                    <span class="material-symbols-outlined"> spa </span>
+                  </div>
+                  <div>
+                    <p class="font-medium text-gray-900 dark:text-white">Massage</p>
+                    <p class="text-sm text-green-600 dark:text-primary">Free</p>
+                  </div>
+                </div>
+                <a href="/booking/booking.html">
+                  <button
+                    class="flex items-center justify-center gap-1 rounded-full bg-primary px-4 py-2 text-sm font-bold text-white">
+                    <span class="material-symbols-outlined text-base"> add </span>
+                    <span>Add</span>
+                  </button>
+                </a>
+              </div>
+              <div
+                class="flex justify-between items-center rounded-lg bg-background-dark/5 dark:bg-background-light/5 p-3">
+                <div class="flex items-center gap-3">
+                  <div class="flex size-10 items-center justify-center rounded-full bg-primary/20 text-primary">
+                    <span class="material-symbols-outlined"> self_improvement </span>
+                  </div>
+                  <div>
+                    <p class="font-medium text-gray-900 dark:text-white">Acupuncture</p>
+                    <p class="text-sm text-green-600 dark:text-primary">Free</p>
+                  </div>
+                </div>
+                <a href="/booking/booking.html">
+                  <button
+                    class="flex items-center justify-center gap-1 rounded-full bg-primary px-4 py-2 text-sm font-bold text-white">
+                    <span class="material-symbols-outlined text-base"> add </span>
+                    <span>Add</span>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-4">
+            <h3 class="font-bold text-gray-900 dark:text-white">Purchase new service</h3>
+            <div class="space-y-3">
+              <div
+                class="flex justify-between items-center rounded-lg bg-background-dark/5 dark:bg-background-light/5 p-3">
+                <div class="flex items-center gap-3">
+                  <div class="flex size-10 items-center justify-center rounded-full bg-primary/20 text-primary">
+                    <span class="material-symbols-outlined"> self_care </span>
+                  </div>
+                  <div>
+                    <p class="font-medium text-gray-900 dark:text-white">Manicure &amp; Pedicure</p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">$25</p>
+                  </div>
+                </div>
+                <a href="/booking/booking.html">
+                  <button
+                    class="flex items-center justify-center gap-1 rounded-full bg-primary px-4 py-2 text-sm font-bold text-white">
+                    <span class="material-symbols-outlined text-base"> add </span>
+                    <span>Add</span>
+                  </button>
+                </a>
+              </div>
+              <div
+                class="flex justify-between items-center rounded-lg bg-background-dark/5 dark:bg-background-light/5 p-3">
+                <div class="flex items-center gap-3">
+                  <div class="flex size-10 items-center justify-center rounded-full bg-primary/20 text-primary">
+                    <span class="material-symbols-outlined"> content_cut </span>
+                  </div>
+                  <div>
+                    <p class="font-medium text-gray-900 dark:text-white">Haircut &amp; Styling</p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">$30</p>
+                  </div>
+                </div>
+                <a href="/booking/booking.html">
+                  <button
+                    class="flex items-center justify-center gap-1 rounded-full bg-primary px-4 py-2 text-sm font-bold text-white">
+                    <span class="material-symbols-outlined text-base"> add </span>
+                    <span>Add</span>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

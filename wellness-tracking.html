@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Wellness Tracking</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700;900&amp;display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#38e07b",
+            "background-light": "#f6f8f7",
+            "background-dark": "#122017",
+          },
+          fontFamily: {
+            display: ["Lexend"],
+          },
+          borderRadius: { DEFAULT: "0.5rem", lg: "1rem", xl: "1.5rem", full: "9999px" },
+        },
+      },
+    };
+  </script>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display">
+  <div class="flex flex-col min-h-screen justify-between">
+    <div class="flex-grow">
+      <header class="flex items-center p-4">
+        <button class="text-background-dark dark:text-background-light">
+          <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z">
+            </path>
+          </svg>
+        </button>
+        <h1 class="flex-1 text-center text-lg font-bold text-background-dark dark:text-background-light pr-6">Wellness
+          Tracking</h1>
+      </header>
+      <main class="p-4 space-y-8">
+        <section>
+          <h2 class="text-2xl font-bold text-background-dark dark:text-background-light mb-4">Daily Check-in</h2>
+          <div class="flex flex-col gap-4">
+            <div>
+              <p class="font-medium text-background-dark dark:text-background-light mb-2">How are you feeling?</p>
+              <div class="flex flex-wrap gap-2">
+                <label class="cursor-pointer">
+                  <input checked="" class="sr-only" name="mood" type="radio" />
+                  <span
+                    class="block rounded-full px-4 py-2 text-sm font-medium border border-primary/30 text-background-dark dark:text-background-light bg-primary/10 dark:bg-primary/20 has-[:checked]:bg-primary has-[:checked]:text-black has-[:checked]:border-primary">Happy</span>
+                </label>
+                <label class="cursor-pointer">
+                  <input class="sr-only" name="mood" type="radio" />
+                  <span
+                    class="block rounded-full px-4 py-2 text-sm font-medium border border-primary/30 text-background-dark dark:text-background-light bg-primary/10 dark:bg-primary/20 has-[:checked]:bg-primary has-[:checked]:text-black has-[:checked]:border-primary">Content</span>
+                </label>
+                <label class="cursor-pointer">
+                  <input class="sr-only" name="mood" type="radio" />
+                  <span
+                    class="block rounded-full px-4 py-2 text-sm font-medium border border-primary/30 text-background-dark dark:text-background-light bg-primary/10 dark:bg-primary/20 has-[:checked]:bg-primary has-[:checked]:text-black has-[:checked]:border-primary">Neutral</span>
+                </label>
+                <label class="cursor-pointer">
+                  <input class="sr-only" name="mood" type="radio" />
+                  <span
+                    class="block rounded-full px-4 py-2 text-sm font-medium border border-primary/30 text-background-dark dark:text-background-light bg-primary/10 dark:bg-primary/20 has-[:checked]:bg-primary has-[:checked]:text-black has-[:checked]:border-primary">Sad</span>
+                </label>
+                <label class="cursor-pointer">
+                  <input class="sr-only" name="mood" type="radio" />
+                  <span
+                    class="block rounded-full px-4 py-2 text-sm font-medium border border-primary/30 text-background-dark dark:text-background-light bg-primary/10 dark:bg-primary/20 has-[:checked]:bg-primary has-[:checked]:text-black has-[:checked]:border-primary">Anxious</span>
+                </label>
+              </div>
+            </div>
+            <div class="space-y-2">
+              <label class="font-medium text-background-dark dark:text-background-light" for="pain-level">Pain Level
+                (1-10)</label>
+              <div class="flex items-center gap-4">
+                <input class="w-full h-2 bg-primary/20 rounded-lg appearance-none cursor-pointer accent-primary"
+                  id="pain-level" max="10" min="1" type="range" value="5" />
+                <span class="font-bold text-background-dark dark:text-background-light w-4 text-center">5</span>
+              </div>
+            </div>
+            <div>
+              <label class="font-medium text-background-dark dark:text-background-light" for="notes">Notes on your
+                day</label>
+              <textarea
+                class="form-textarea w-full rounded-lg border-primary/30 bg-white dark:bg-background-dark/50 text-background-dark dark:text-background-light focus:ring-primary focus:border-primary p-3 mt-2 min-h-32"
+                id="notes" placeholder="e.g., felt great after my morning walk..."></textarea>
+            </div>
+            <a href="/dashboard.html">
+              <button class="w-full bg-primary text-black font-bold py-3 rounded-lg text-base">Save</button>
+            </a>
+          </div>
+        </section>
+        <section>
+          <h2 class="text-2xl font-bold text-background-dark dark:text-background-light mb-4">Weekly Summary</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-primary/10 dark:bg-primary/20 p-4 rounded-lg">
+              <p class="text-background-dark/80 dark:text-background-light/80 text-sm font-medium">Mood Trend</p>
+              <p class="text-3xl font-bold text-background-dark dark:text-background-light">Neutral</p>
+              <p class="text-background-dark/60 dark:text-background-light/60 text-xs">Last 7 Days</p>
+              <div class="mt-4">
+                <svg fill="none" height="120" viewBox="0 0 300 120" width="100%" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 87.2C11.5385 87.2 11.5385 16.8 23.0769 16.8C34.6154 16.8 34.6154 32.8 46.1538 32.8C57.6923 32.8 57.6923 74.4 69.2308 74.4C80.7692 74.4 80.7692 26.4 92.3077 26.4C103.846 26.4 103.846 80.8 115.385 80.8C126.923 80.8 126.923 48.8 138.462 48.8C150 48.8 150 36 161.538 36C173.077 36 173.077 96.8 184.615 96.8C196.154 96.8 196.154 119.2 207.692 119.2C219.231 119.2 219.231 0.8 230.769 0.8C242.308 0.8 242.308 64.8 253.846 64.8C265.385 64.8 265.385 103.2 276.923 103.2C288.462 103.2 288.462 20 300 20"
+                    stroke="#38e07b" stroke-linecap="round" stroke-width="3"></path>
+                </svg>
+                <div
+                  class="flex justify-between text-xs font-medium text-background-dark/60 dark:text-background-light/60 mt-2">
+                  <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+                </div>
+              </div>
+            </div>
+            <div class="bg-primary/10 dark:bg-primary/20 p-4 rounded-lg">
+              <p class="text-background-dark/80 dark:text-background-light/80 text-sm font-medium">Pain Levels</p>
+              <p class="text-3xl font-bold text-background-dark dark:text-background-light">4</p>
+              <p class="text-background-dark/60 dark:text-background-light/60 text-xs">Last 7 Days</p>
+              <div class="grid grid-cols-7 gap-3 items-end h-32 mt-4">
+                <div class="bg-primary/50 dark:bg-primary/70 rounded-t-sm" style="height: 10%;"></div>
+                <div class="bg-primary/50 dark:bg-primary/70 rounded-t-sm" style="height: 80%;"></div>
+                <div class="bg-primary/50 dark:bg-primary/70 rounded-t-sm" style="height: 70%;"></div>
+                <div class="bg-primary/50 dark:bg-primary/70 rounded-t-sm" style="height: 90%;"></div>
+                <div class="bg-primary/50 dark:bg-primary/70 rounded-t-sm" style="height: 30%;"></div>
+                <div class="bg-primary/50 dark:bg-primary/70 rounded-t-sm" style="height: 30%;"></div>
+                <div class="bg-primary/50 dark:bg-primary/70 rounded-t-sm" style="height: 50%;"></div>
+              </div>
+              <div
+                class="flex justify-between text-xs font-medium text-background-dark/60 dark:text-background-light/60 mt-2">
+                <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer
+      class="sticky bottom-0 bg-background-light dark:bg-background-dark/80 backdrop-blur-sm border-t border-primary/20 dark:border-primary/30">
+      <nav class="flex justify-around items-center p-2">
+        <a class="flex flex-col items-center gap-1 text-background-dark/60 dark:text-background-light/60" href="#">
+          <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z">
+            </path>
+          </svg>
+          <span class="text-xs font-medium">Home</span>
+        </a>
+        <a class="flex flex-col items-center gap-1 text-background-dark/60 dark:text-background-light/60" href="#">
+          <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-96-88v64a8,8,0,0,1-16,0V132.94l-4.42,2.22a8,8,0,0,1-7.16-14.32l16-8A8,8,0,0,1,112,120Zm59.16,30.45L152,176h16a8,8,0,0,1,0,16H136a8,8,0,0,1-6.4-12.8l28.78-38.37A8,8,0,1,0,145.07,132a8,8,0,1,1-13.85-8A24,24,0,0,1,176,136,23.76,23.76,0,0,1,171.16,150.45Z">
+            </path>
+          </svg>
+          <span class="text-xs font-medium">Bookings</span>
+        </a>
+        <a class="flex flex-col items-center gap-1 text-primary" href="#">
+          <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M230.93,220a8,8,0,0,1-6.93,4H32a8,8,0,0,1-6.92-12c15.23-26.33,38.7-45.21,66.09-54.16a72,72,0,1,1,73.66,0c27.39,8.95,50.86,27.83,66.09,54.16A8,8,0,0,1,230.93,220Z">
+            </path>
+          </svg>
+          <span class="text-xs font-medium">Profile</span>
+        </a>
+        <a class="flex flex-col items-center gap-1 text-background-dark/60 dark:text-background-light/60" href="#">
+          <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z">
+            </path>
+          </svg>
+          <span class="text-xs font-medium">More</span>
+        </a>
+      </nav>
+    </footer>
+  </div>
+
+</body>
+
+</html>
