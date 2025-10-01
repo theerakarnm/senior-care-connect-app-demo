@@ -140,29 +140,27 @@
       </main>
     </div>
     <footer
-      class="sticky bottom-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-black/10 dark:border-white/10 pb-3">
-      <nav class="flex justify-around items-center pt-2">
-        <a class="flex flex-col items-center gap-1 text-black/60 dark:text-white/60" href="#">
-          <span class="material-symbols-outlined">home</span>
+      class="fixed bottom-0 left-0 right-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-gray-200 dark:border-gray-800 z-20">
+      <nav class="flex justify-around p-2">
+        <a class="flex flex-col items-center justify-center gap-1 w-1/4 p-2 rounded-lg text-primary"
+          href="./dashboard.html">
+          <span class="material-symbols-outlined text-3xl">home</span>
           <span class="text-xs font-medium">Home</span>
         </a>
-        <a class="flex flex-col items-center gap-1 text-black/60 dark:text-white/60" href="#">
-          <span class="material-symbols-outlined">calendar_month</span>
+        <a class="flex flex-col items-center justify-center gap-1 w-1/4 p-2 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-primary/20 hover:text-primary transition-colors"
+          href="./booking/service-select.html">
+          <span class="material-symbols-outlined text-3xl">calendar_month</span>
           <span class="text-xs font-medium">Bookings</span>
         </a>
-        <a class="flex flex-col items-center gap-1 text-primary" href="#">
-          <div class="relative">
-            <div class="bg-primary/20 dark:bg-primary/30 rounded-full p-2">
-              <span class="material-symbols-outlined text-primary">notifications</span>
-            </div>
-            <span
-              class="absolute top-0 right-0 block h-3 w-3 rounded-full bg-red-500 border-2 border-background-light dark:border-background-dark"></span>
-          </div>
-          <span class="text-xs font-bold">Alerts</span>
-        </a>
-        <a class="flex flex-col items-center gap-1 text-black/60 dark:text-white/60" href="#">
-          <span class="material-symbols-outlined">person</span>
+        <a class="flex flex-col items-center justify-center gap-1 w-1/4 p-2 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-primary/20 hover:text-primary transition-colors"
+          href="./profile.html">
+          <span class="material-symbols-outlined text-3xl">person</span>
           <span class="text-xs font-medium">Profile</span>
+        </a>
+        <a class="flex flex-col items-center justify-center gap-1 w-1/4 p-2 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-primary/20 hover:text-primary transition-colors"
+          href="#">
+          <span class="material-symbols-outlined text-3xl">menu</span>
+          <span class="text-xs font-medium">More</span>
         </a>
       </nav>
     </footer>

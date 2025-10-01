@@ -100,27 +100,31 @@
         </div>
       </div>
     </div>
-    <div class="sticky bottom-0">
-      <div
-        class="flex justify-around bg-background-light dark:bg-background-dark/80 border-t border-black/10 dark:border-white/10 py-2 backdrop-blur-md">
-        <a class="flex flex-col items-center justify-end gap-1 text-primary" href="#">
+    <footer
+      class="fixed bottom-0 left-0 right-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-gray-200 dark:border-gray-800 z-20">
+      <nav class="flex justify-around p-2">
+        <a class="flex flex-col items-center justify-center gap-1 w-1/4 p-2 rounded-lg text-primary"
+          href="./dashboard.html">
           <span class="material-symbols-outlined text-3xl">home</span>
-          <p class="text-xs font-bold leading-normal">Home</p>
+          <span class="text-xs font-medium">Home</span>
         </a>
-        <a class="flex flex-col items-center justify-end gap-1 text-black/50 dark:text-white/50" href="#">
-          <span class="material-symbols-outlined text-3xl">book_online</span>
-          <p class="text-xs font-medium leading-normal">Bookings</p>
+        <a class="flex flex-col items-center justify-center gap-1 w-1/4 p-2 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-primary/20 hover:text-primary transition-colors"
+          href="./booking/service-select.html">
+          <span class="material-symbols-outlined text-3xl">calendar_month</span>
+          <span class="text-xs font-medium">Bookings</span>
         </a>
-        <a class="flex flex-col items-center justify-end gap-1 text-black/50 dark:text-white/50" href="#">
+        <a class="flex flex-col items-center justify-center gap-1 w-1/4 p-2 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-primary/20 hover:text-primary transition-colors"
+          href="./profile.html">
           <span class="material-symbols-outlined text-3xl">person</span>
-          <p class="text-xs font-medium leading-normal">Profile</p>
+          <span class="text-xs font-medium">Profile</span>
         </a>
-        <a class="flex flex-col items-center justify-end gap-1 text-black/50 dark:text-white/50" href="#">
-          <span class="material-symbols-outlined text-3xl">more_horiz</span>
-          <p class="text-xs font-medium leading-normal">More</p>
+        <a class="flex flex-col items-center justify-center gap-1 w-1/4 p-2 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-primary/20 hover:text-primary transition-colors"
+          href="#">
+          <span class="material-symbols-outlined text-3xl">menu</span>
+          <span class="text-xs font-medium">More</span>
         </a>
-      </div>
-    </div>
+      </nav>
+    </footer>
   </div>
 
 </body>
